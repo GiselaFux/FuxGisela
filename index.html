@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,55 +12,57 @@
 </head>
 
 <body>
-  <section>
+  <section role="region" aria-labelledby="titulo-encabezado">
     <header id="header">
       <div class="overlay overlay-lg">
-        <img src="./img/shapes/square.png" class="shape square" alt="" />
-        <img src="./img/shapes/circle.png" class="shape circle" alt="" />
-        <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="" />
-        <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt="" />
-        <img src="./img/shapes/x.png" class="shape xshape" alt="" />
-        <img src="./img/shapes/wave.png" class="shape wave wave1" alt="" />
-        <img src="./img/shapes/wave.png" class="shape wave wave2" alt="" />
-        <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
-        <img src="./img/shapes/FG-Photoroom.png-Photoroom.png" class="letters" alt="" />
-        <img src="./img/shapes/points1.png" class="points points1" alt="" />
+        <img src="./img/shapes/square.png" class="shape square" alt="" role="presentation"/>
+        <img src="./img/shapes/circle.png" class="shape circle" alt="" role="presentation"/>
+        <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="" role="presentation"/>
+        <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt="" role="presentation"/>
+        <img src="./img/shapes/x.png" class="shape xshape" alt="" role="presentation"/>
+        <img src="./img/shapes/wave.png" class="shape wave wave1" alt="" role="presentation"/>
+        <img src="./img/shapes/wave.png" class="shape wave wave2" alt="" role="presentation"/>
+        <img src="./img/shapes/triangle.png" class="shape triangle" alt="" role="presentation"/>
+        <img src="./img/shapes/FG-Photoroom.png-Photoroom.png" class="letters" alt="" role="presentation"/>
+        <img src="./img/shapes/points1.png" class="points points1" alt="" role="presentation"/>
       </div>
 
       <nav>
         <div class="container">
           <div class="logo">
-            <img src="./img/logo.png" alt="" />
+            <img src="./img/logo.png" alt=""role=presentation />
           </div>
 
           <div class="links">
-            <ul>
-              <li>
+            <ul  role="menu" aria-labelledby="menuButton" >
+              <li role="menuitem">
                 <a href="#header">Home</a>
               </li>
-              <li>
+              <li role="menuitem">
                 <a href="#services">Servicios</a>
               </li>
-              <li>
+              <li role="menuitem">
                 <a href="#portfolio">Portfolio</a>
               </li>
-              <li>
+              <li role="menuitem">
                 <a href="#about">About</a>
               </li>
-              <li>
+              <li role="menuitem">
                 <a href="#testimonials">Testimonios</a>
               </li>
-              <li>
+              <li role="menuitem">
                 <a href="#contact">Contacto</a>
               </li>
-              <li>
+              <li role="menuitem">
                 <a href="#contact" class="active">Contrátame</a>
               </li>
             </ul>
           </div>
-
-          <div class="hamburger-menu">
-            <div class="bar"></div>
+         <!-- Se agrega tabindex, role y aria-label para que el menú hamburguesa sea accesible -->
+         <div class="hamburger-menu" tabindex="0" role="button" aria-label="Menú de navegación">
+          <div class="bar"></div>
+          <!-- <div class="hamburger-menu">
+            <div class="bar"></div> -->
           </div>
         </div>
       </nav>
@@ -70,14 +72,14 @@
           <div class="column-1">
             <h1 class="header-title">Gisela Fux</h1>
             <p class="text">
-              Hola! Soy Gisela Fux, desarrolladora full stack  y tester manual Funcional.
+              Hola! Soy Gisela Fux, desarrolladora full stack, tester manual Funcional. Tester accesibilidad web.
             </p>
-            <a href="GISELA_FUX_CV_.pdf" class="btn" target="_blank">Download CV</a>
+            <a href="GISELAFUX-CV25.pdf" class="btn" aria-label="pdf" target="_blank">Download CV</a>
           </div>
 
           <div class="column-2 image">
-            <img src="./img/shapes/points2.png" class="points points2" alt="" />
-            <img src="./img/shapes/otraGi.png" class="img-element z-index" alt="" />
+            <img src="./img/shapes/points2.png" class="points points2" alt="" role="presentation"/>
+            <img src="./img/shapes/otraGi.png" class="img-element z-index" alt="foto perfil Gisela Fux" />
           </div>
         </div>
       </div>
@@ -86,7 +88,7 @@
     <section class="services section" id="services">
       <div class="container">
         <div class="section-header">
-          <h3 class="title" data-title="Lo que realizo...">Servicios</h3>
+          <h2 class="title" data-title="Lo que realizo...">Servicios</h2>
           <p class="text">
             Realizo proyectos de principio a fin con distintas tecnologías, dependiendo de las
             nececidades del cliente.
@@ -95,31 +97,31 @@
 
         <div class="cards">
           <div class="card-wrap">
-            <img src="./img/shapes/points3.png" class="points points1 points-sq" alt="" />
+            <img src="./img/shapes/points3.png" class="points points1 points-sq" alt=""role="presentation"/>
             <div class="card" data-card="UI/UX">
               <div class="card-content z-index">
-                <img src="./img/shapes/design-icon.png" class="icon" alt="" />
+                <img src="./img/shapes/design-icon.png" class="icon" alt="icono de diseño" />
                 <h3 class="title-sm">Web Design</h3>
                 <p class="text">
                   Diseño proyectos, desde la elaboración de wireframes con diseños responsivos, desarrollo el código, hasta subir el trabajo al servidor. Escucho las
                   necesidades de mis clientes y sugiero cambios necesarios, para alcanzar los objetivos deseados.
                 </p>
-                <a href="./poyectos.html" class="btn small">Ver más imgagenes proyectos</a>
+                <a href="./poyectos.html" class="btn small" role="button" aria-label="Ver más imágenes de proyectos">Ver más imágenes proyectos</a>
               </div>
             </div>
           </div>
 
           <div class="cards">
             <div class="card-wrap">
-              <img src="./img/shapes/points3.png" class="points points1 points-sq" alt="" />
+              <img src="./img/shapes/points3.png" class="points points1 points-sq" alt="" role="presentation"/>
               <div class="card" data-card="App">
                 <div class="card-content z-index">
-                  <img src="./img/shapes/app-icon.png" class="icon" alt="" />
+                  <img src="./img/shapes/app-icon.png" class="icon" alt="icono representativo de engranaje"/>
                   <h3 class="title-sm"> QA Tester manual funcional.</h3>
                   <p class="text">
                    Realizo testing manual  funcional en softwares para mejorar la calidad de los mismos. Manejo de herramientas.
                   </p>
-                  <a href="./poyectos.html" class="btn small">Ver más imgagenes proyectos</a>
+                  <a href="./poyectos.html" class="btn small" aria-label="Ver más imágenes de proyectos" role="button">Ver más imágenes proyectos</a>
                 </div>
               </div>
             </div>
@@ -128,15 +130,15 @@
 
 
           <div class="card-wrap">
-            <img src="./img/shapes/points3.png" class="points points2 points-sq" alt="" />
+            <img src="./img/shapes/points3.png" class="points points2 points-sq" alt="" role="presentation"/>
             <div class="card" data-card="App">
               <div class="card-content z-index">
-                <img src="./img/shapes/app-icon.png" class="icon" alt="" />
+                <img src="./img/shapes/app-icon.png" class="icon" alt="icono representativo de engranaje" />
                 <h3 class="title-sm">Web Development</h3>
                 <p class="text">
                   Desarrollo proyectos tanto en FrontEnd como en BackEnd y Bases de Datos.
                 </p>
-                <a href="./poyectos.html" class="btn small">Ver más imgagenes proyectos</a>
+                <a href="./poyectos.html" class="btn small" aria-label="Ver más imágenes de proyectos" role="button">Ver más imágenes proyectos</a>
               </div>
             </div>
           </div>
@@ -144,25 +146,25 @@
        
       </div>
  <div class="up">
-          <a href="#top"> <i class="fa-solid fa-up-long"></i></a>
+          <a href="#top" aria-label="volver a la sección inicial" role="button"> <i class="fa-solid fa-up-long" aria-hidden="false"></i></a>
         </div>
     </section>
 
-    <section class="portfolio section" id="portfolio">
+    <section class="portfolio section" id="portfolio" role="region" aria-labelledby="titulo-portfolio">
       <div class="background-bg">
         <div class="overlay overlay-sm">
-          <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="" />
-          <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt="" />
-          <img src="./img/shapes/square.png" class="shape square" alt="" />
-          <img src="./img/shapes/wave.png" class="shape wave" alt="" />
-          <img src="./img/shapes/circle.png" class="shape circle" alt="" />
-          <img src="./img/shapes/triangle.png" class="shape triangle" alt="" />
-          <img src="./img/shapes/x.png" class="shape xshape" alt="" />
+          <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="" role="presentation" />
+          <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt="" role="presentation"/>
+          <img src="./img/shapes/square.png" class="shape square" alt="" role="presentation"/>
+          <img src="./img/shapes/wave.png" class="shape wave" alt="" role="presentation"/>
+          <img src="./img/shapes/circle.png" class="shape circle" alt=""role="presentation" />
+          <img src="./img/shapes/triangle.png" class="shape triangle" alt="" role="presentation"/>
+          <img src="./img/shapes/x.png" class="shape xshape" alt="" role="presentation"/>
         </div>
       </div>
       <div class="container">
         <div class="section-header">
-          <h3 class="title" data-title="Mis Trabajos">Portfolio</h3>
+          <h2 class="title" data-title="Mis Trabajos">Portfolio</h2>
         </div>
         <div class="section-body">
           <div class="filter" id="filter">
@@ -173,19 +175,20 @@
               Responsive Web
             </button>
             <button class="filter-btn" data-filter=".logo-design">
-              Logo Design
+              Diseño de logo
             </button>
           </div>
 
           <div class="grid">
             <div class="grid-item logo-design">
               <div class="gallery-image">
-                <img src="./img/portfolio/port1.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port1.png" alt="imagen logo realizado" />
+                <!-- <div class="img-overlay"> -->
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Se realizan varios logos para tener distintas opciones antes de elegir la más adecuada</h6>
-                    <h3>Logo Design</h3>
+                    <h5>Diseño de varios logos antes de elegir la más adecuada</h5>
+                    <h3>Diseño de logo</h3>
 
                   </div>
                 </div>
@@ -193,16 +196,17 @@
             </div>
             <div class="grid-item webdev">
               <div class="gallery-image">
-                <img src="./img/portfolio/port2.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port2.png" alt="Imagen de Proyecto Portfolio con base de datos" />
+                <!-- <div class="img-overlay"> -->
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Projecto realizado con NodeJs Express<br> con arquitectura de diseño MVC<br> y base de datos
-                      MySQL</h6>
+                    <h5>Proyecto NodeJs Express.<br>Arquitectura de diseño MVC.<br>Base de datos
+                      MySQL</h5>
                     <a href="https://github.com/GiselaFux/runners-store" target="_blank">GitHub</a>
-                     <a href="./poyectos.html" class="btn small">Más imgágenes de los proyectos</a>
+                     <a href="./poyectos.html" class="btn small">Más imágenes de los proyectos</a>
                      <h3>Web Development</h3>
-                    <a href="./poyectos.html" title="Portfolio Gisela Fux" target="_blank">Ver más</a>
+                    <a href="./poyectos.html" title="Portfolio Gisela Fux" target="_blank" role="button" aria-label="Ver más proyectos">Ver más proyectos</a>
                    
                   </div>
                 </div>
@@ -211,14 +215,15 @@
             <div class="grid-item  webdev">
               <div class="gallery-image">
                 <img src="./img/portfolio/port4.png" alt="imagen parte inicial pagina web optica" />
-                <div class="img-overlay">
+                <!-- <div class="img-overlay"> -->
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Proyecto de prueba realizado con tecnologías MERN.Se vincula el carrito de compras con
-                      plataforma de pagos y panel administrador</h6>
-                    <a href="https://github.com/GiselaFux/Optica" target="_blank">Github</a>
+                    <h5>Tecnologías MERN.Vinculación del carrito de compras con
+                      plataforma de pagos y panel administrador</h5>
+                    <a href="https://github.com/GiselaFux/Optica" target="_blank"role="button" aria-label="Enlace a Github">Github</a>
                     </p>
-                    <a href="./poyectos.html" class="btn small">Más imgágenes proyectos</a>
+                    <a href="./poyectos.html" class="btn small" role="button" aria-label="Ver más imágenes de proyectos">Más imágenes proyectos</a>
                     <h3>Web Development /UI / UX Design </h3>
                   </div>
                 </div>
@@ -226,13 +231,14 @@
             </div>
             <div class="grid-item webdev">
               <div class="gallery-image">
-                <img src="./img/portfolio/port11.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port11.png" alt="Formulario responsivo en plataforma CodePen" />
+                <!-- <div class="img-overlay"> -->
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Formulario responsivo realizado en el curso de freeCodeCamp en la plataforma CodePen</h6>
-                    <a href="https://codepen.io/Gif1969" target="_blanc">CodePen</a>
-                    <h3>Web Design</h3>
+                    <h5>Formulario responsivo (FreeCodeCamp-CodePen)</h5>
+                    <a href="https://codepen.io/Gif1969" target="_blanc" role="button" aria-label="Abrirá una nueva pestaña del site CodePen">CodePen</a>
+                    <h3>Diseño Web</h3>
 
                   </div>
                 </div>
@@ -240,12 +246,13 @@
             </div>
             <div class="grid-item appdev webdev">
               <div class="gallery-image">
-                <img src="./img/portfolio/port6a.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port6a.png" alt="Proyecto de prueba realizado en React" />
+                <!-- <div class="img-overlay"> -->
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Proyecto de prueba realizado con React</h6>
-                    <a href="https://github.com/GiselaFux/tresEnUno" target="_blank">Github</a>
+                    <h5>Proyecto realizado con React</h5>
+                    <a href="https://github.com/GiselaFux/tresEnUno" target="_blank" role="button" aria-label="Abrirá pestaña GitHub">Github</a>
 
                     <h3> App Web Development</h3>
 
@@ -255,14 +262,15 @@
             </div>
             <div class="grid-item appdev">
               <div class="gallery-image">
-                <img src="./img/portfolio/munivhcell.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/munivhcell.png" alt="Proyecto Municipalidad 1" />
+                <!-- <div class="img-overlay"> -->
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Proyecto de prueba realizado para la municipaliad de Valle Hermoso realizado con Nodejs Express
-                      con diseo de arquitectura MVC</h6>
-                    <a href="https://github.com/GiselaFux/VH" target="_blank">Github</a>
-                    <h3>Responsive Web Design</h3>
+                    <h5>Proyecto Municipaliad de Valle Hermoso (Nodejs, Express,
+                      arquitectura MVC)</h5>
+                    <a href="https://github.com/GiselaFux/VH" target="_blank"role="button" aria-label="Abrirá pestaña GitHub">Github</a>
+                    <h3>Diseño Web responsivo</h3>
 
                   </div>
                 </div>
@@ -270,14 +278,14 @@
             </div>
             <div class="grid-item webdev">
               <div class="gallery-image">
-                <img src="./img/portfolio/munivh.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/munivh.png" alt="Proyecto municipal 2"/>
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Proyecto de prueba realizado para la municipaliad de Valle Hermoso realizado con Nodejs Express
-                      con diseño de arquitectura MVC siguiendo los colores elegidos por la Municipalidad </h6>
-                    <a href="https://github.com/GiselaFux/VH" target="_blank">Github</a>
-                    <h3>Web Development</h3>
+                    <h5>Proyecto 2 Municipaliad de Valle Hermoso (Nodejs, Express,
+                       arquitectura MVC) </h5>
+                    <a href="https://github.com/GiselaFux/VH" target="_blank"role="button" aria-label="Abrirá pestaña GitHub">Github</a>
+                    <h3>Desarrollo Web</h3>
 
                   </div>
                 </div>
@@ -285,12 +293,12 @@
             </div>
             <div class="grid-item logo-design">
               <div class="gallery-image">
-                <img src="./img/portfolio/port5.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port5.png" alt="logos realizados por mí"/>
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Se realizan varios logos para tener distintas opciones antes de elegir la más adecuada</h6>
-                    <h3>Logo Design</h3>
+                    <h5>Diseño distintos logos </h5>
+                    <h3>Diseño de Logo</h3>
 
                   </div>
                 </div>
@@ -298,12 +306,12 @@
             </div>
             <div class="grid-item logo-design">
               <div class="gallery-image">
-                <img src="./img/portfolio/port14.jpg" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port14.jpg" alt="Logo empresa de Turismo"/>
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Logo empresa de turismo.</h6>
-                    <h3>Logo Design</h3>
+                    <h5>Logo empresa de turismo.</h5>
+                    <h3>Diseño de Logo</h3>
 
                   </div>
                 </div>
@@ -311,12 +319,12 @@
             </div>
             <div class="grid-item logo-design">
               <div class="gallery-image">
-                <img src="./img/portfolio/port15.jpg" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port15.jpg" alt="Logo realizado por mí" />
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Logo realizado para reventa de productos bibles saludables FuXion</h6>
-                    <h3>Logo Design</h3>
+                    <h5>Logo reventa productos FuXion</h5>
+                    <h3>Diseño de Logo</h3>
 
                   </div>
                 </div>
@@ -324,14 +332,14 @@
             </div>
             <div class="grid-item webdev">
               <div class="gallery-image">
-                <img src="./img/portfolio/port5g.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port5g.png" alt="Imagen de una de las páginas del portfolio completo Fux Gisela" />
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Portfolio realizado con NodeJs express, Aruitectura de diseño MVC y base de datos MySQL</h6>
+                    <h5>Portfolio (NodeJs express. Arquitectura de diseño MVC. Base de datos MySQL)</h5>
                     <a href="https://github.com/GiselaFux/gfPortfolio" target="_blank">GitHub</a>
-                    <a href="./poyectos.html" class="btn small">Más imgágenes de los proyectos</a>
-                    <h3>Web Development</h3>
+                    <a href="./poyectos.html" class="btn small"role="button" aria-label="Más imágenes de proyectos">Más imágenes de los proyectos</a>
+                    <h3>Desarrollo Web</h3>
 
                   </div>
                 </div>
@@ -339,15 +347,14 @@
             </div>
             <div class="grid-item appdev">
               <div class="gallery-image">
-                <img src="./img/portfolio/Hotelop2.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/Hotelop2.png" alt="Imagen Landing Page Hotel Operador Turístico" />
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Hotel Operador Turístico -Landing Page- Solicitada por el cliente sin formulario, solo con
-                      conexión a WhatsApp</h6>
+                    <h5>Hotel Operador Turístico -Landing Page-</h5>
                     <a href="https://github.com/GiselaFux/HotelOperadorTuristico" target="_blank">GitHub</a>
-                    <a href="./poyectos.html" class="btn small">Más imgágenes proyectos</a>
-                    <h3>Responsive Web Development</h3>
+                    <a href="./poyectos.html" class="btn small" role="button" aria-label="Más imágenes de proyectos">Más imgágenes de proyectos</a>
+                    <h3>Desarrollo web responsivo</h3>
 
                   </div>
                 </div>
@@ -355,14 +362,14 @@
             </div>
             <div class="grid-item appdev">
               <div class="gallery-image">
-                <img src="./img/portfolio/port3.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port3.png" alt="imagen Portfolio Gisela Fux responsivo con Node js" />
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Portfolio realizado con NodeJs express, Aruitectura de diseño MVC y base de datos MySQL</h6>
+                    <h5>Portfolio (NodeJs express, Arquitectura MVC, Base de datos MySQL)</h5>
                     <a href="https://github.com/GiselaFux/gfPortfolio" target="_blank">GitHub</a>
-                    <a href="./poyectos.html" class="btn small">Más imgágenes de los proyectos</a>
-                    <h3>Responsive Web Development</h3>
+                    <a href="./poyectos.html" class="btn small" role="button" aria-label="Ver más imágenes de proyectos">Más imágenes de proyectos</a>
+                    <h3>Desarrollo web responsivo</h3>
 
                   </div>
                 </div>
@@ -370,15 +377,14 @@
             </div>
             <div class="grid-item appdev">
               <div class="gallery-image">
-                <img src="./img/portfolio/port8.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port8.png" alt="Imagen responsivo de landing page Hotel operador turístico" />
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Hotel Operador Turístico -Landing Page- Solicitada por el cliente sin formulario, solo con
-                      conexión a WhatsApp</h6>
+                    <h5>Hotel Operador Turístico -Landing Page-</h5>
                     <a href="https://github.com/GiselaFux/HotelOperadorTuristico" target="_blank">GitHub</a>
-                    <a href="./poyectos.html" class="btn small">Más imgágenes de los proyectos</a>
-                    <h3>Responsive Web Development</h3>
+                    <a href="./poyectos.html" class="btn small" role="button" aria-label="Más imágenes de proyectos">Más imágenes de proyectos</a>
+                    <h3>Desarrollo web responsivo</h3>
 
                   </div>
                 </div>
@@ -386,15 +392,15 @@
             </div>
             <div class="grid-item ui webdev">
               <div class="gallery-image">
-                <img src="./img/portfolio/port9.png" alt="" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/port9.png" alt="Imagen de proyecto copia de Mercado libre" />
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Copia de mercado libre realizado en HTML CSS realizado en el marco de trabajo Práctico Digital
-                      House</h6>
-                    <h6>Deploy en Heroku</h6>
-                    <a href="./poyectos.html" class="btn small">Más imgágenes de los proyectos</a>
-                    <h3>Web Design</h3>
+                    <h5>Copia de Mercado Libre (HTML CSS. Trabajo Práctico Digital
+                      House)</h5>
+                    <h5>Deploy en Heroku</h5>
+                    <a href="./poyectos.html" class="btn small"role="button" aria-label="Más imágenes de proyectos">Más imágenes de proyectos</a>
+                    <h3>Diseño web</h3>
 
                   </div>
                 </div>
@@ -403,12 +409,12 @@
 
             <div class="grid-item qa">
               <div class="gallery-image">
-                <img src="./img/portfolio/testingJira.png" alt="Jira-XRay" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/testingJira.png" alt="Jira-XRay"/>
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Testing maunual funcional Jira sitio Saucedemo.com Usuario: problem_user.</h6>
-                    <a href="./poyectos.html" class="btn small">Más imgágenes de los proyectos</a>
+                    <h5>Testing manual funcional Jira (Saucedemo.com)</h5>
+                    <a href="./poyectos.html" class="btn small" role="button" aria-label="Más imágenes de proyectos">Más imágenes de proyectos</a>
                     <h3>QA Testing manual funcional.</h3>
 
                   </div>
@@ -418,12 +424,12 @@
 
             <div class="grid-item qa">
               <div class="gallery-image">
-                <img src="./img/portfolio/testing2.png" alt="Jira-XRay" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/testing2.png" alt="Jira-XRay"/>
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Testing maunual funcional Jira sitio Saucedemo.com Usuario: problem_user.</h6>
-                    <a href="./poyectos.html" class="btn small">Más imgágenes de los proyectos</a>
+                    <h5>Testing manual funcional Jira (Saucedemo.com)</h5>
+                    <a href="./poyectos.html" class="btn small" role="button" aria-label="Más imágenes de proyectos">Más imágenes de los proyectos</a>
                     <h3>QA Testing manual funcional.</h3>
 
                   </div>
@@ -433,12 +439,12 @@
 
             <div class="grid-item qa">
               <div class="gallery-image">
-                <img src="./img/portfolio/testing3.png" alt="Jira-XRay" />
-                <div class="img-overlay">
+                <img src="./img/portfolio/testing3.png" alt="Jira-XRay"/>
+                  <div class="img-overlay" tabindex="0" role="button" aria-label="Ver detalles del proyecto">
                   <div class="plus"></div>
                   <div class="img-description">
-                    <h6>Testing maunual funcional Jira sitio Saucedemo.com Usuario: problem_user.</h6>
-                    <a href="./poyectos.html" class="btn small">Más imgágenes de los proyectos</a>
+                    <h5>Testing manual funcional Jira (Saucedemo.com)</h5>
+                    <a href="./poyectos.html" class="btn small"role="button" aria-label="Más imágenes de proyectos">Más imágenes de los proyectos</a>
                     <h3>QA Testing manual funcional.</h3>
 
                   </div>
@@ -448,15 +454,15 @@
 
           </div>
           <div class="up">
-            <a href="#top"> <i class="fa-solid fa-up-long"></i></a>
+            <a href="#top" aria-label="volver a la sección inicial" role="button"> <i class="fa-solid fa-up-long" aria-hidden="false"></i></a>
           </div>
         </div>
       </div>
     </section>
-    <section class="about section" id="about">
+    <section class="about section" id="about" role="region" aria-labelledby="titulo-about">
       <div class="container">
         <div class="section-header">
-          <h3 class="title" data-title="¿Quién soy yo?">Sobre mí</h3>
+          <h2 class="title" data-title="¿Quién soy yo?">Sobre mí</h2>
         </div>
 
         <div class="section-body grid-2">
@@ -556,22 +562,37 @@
                   <div class="skill-progress" data-progress="40%"></div>
                 </div>
               </div>
+
+              <div class="skill html">
+                <h3 class="skill-title">Wave(Web Accessibility Tool)</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="50%"></div>
+                </div>
+              </div>
+
+              <div class="skill html">
+                <h3 class="skill-title">BrowserStack-Accessibility testing.</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="50%"></div>
+                </div>
+              </div>
+              
               <!--      <a href="#" class="btn">Read more</a> -->
             </div> 
            </div> 
           <div class="column-2 image">
-            <img src="./img/shapes/points2.png" class="points2" alt="">
-            <img src="./img/shapes/points4.png" class="points" alt="" />
-            <img src="./img/shapes/gise.png" width="100px" class="z-index" alt="" />
+            <img src="./img/shapes/points2.png" class="points2" alt="" role="presentation">
+            <img src="./img/shapes/points4.png" class="points" alt="" role="presentation" />
+            <img src="./img/shapes/gise.png" width="100px" class="z-index" alt="imágen Gisela Fux decorativa" />
           </div>
           <div class="up">
-            <a href="#top"> <i class="fa-solid fa-up-long"></i></a>
+            <a href="#top" aria-label="volver a la sección inicial" role="button"> <i class="fa-solid fa-up-long" aria-hidden="false"></i></a>
           </div>
         </div>
 
     </section>
 
-    <section class="testimonials section" id="testimonials">
+  <section class="testimonials section" id="testimonials" role="region" aria-labelledby="titulo-testimonios">
       <div class="container">
         <div class="section-header">
           <h3 class="title" data-title="Clientes opinan">Testimonios</h3>
@@ -584,11 +605,11 @@
                 <div class="swiper-slide review">
                   <i class="fas fa-quote-left quote"></i>
                   <div class="rate">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
                   </div>
 
                   <p class="review-text">
@@ -597,18 +618,18 @@
 
                   <div class="review-info">
                     <h3 class="review-name">Milagros </h3>
-                    <h5 class="review-job">Empresa de turismo.Marcando Caminos<br>Hotel Operador Turístico</h5>
+                    <h4 class="review-job">Empresa de turismo.Marcando Caminos<br>Hotel Operador Turístico</h4>
                   </div>
                 </div>
 
                 <div class="swiper-slide review">
                   <i class="fas fa-quote-left quote"></i>
                   <div class="rate">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
                   </div>
 
                   <p class="review-text">
@@ -617,18 +638,18 @@
 
                   <div class="review-info">
                     <h3 class="review-name">Clientes futuros</h3>
-                    <h5 class="review-job"> Munich</h5>
+                    <h4 class="review-job"> Munich</h4>
                   </div>
                 </div>
 
                 <div class="swiper-slide review">
                   <i class="fas fa-quote-left quote"></i>
                   <div class="rate">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
                   </div>
 
                   <p class="review-text">
@@ -637,18 +658,18 @@
 
                   <div class="review-info">
                     <h3 class="review-name">Futuros clientes</h3>
-                    <h5 class="review-job"> London</h5>
+                    <h4 class="review-job"> London</h4>
                   </div>
                 </div>
 
                 <div class="swiper-slide review">
                   <i class="fas fa-quote-left quote"></i>
                   <div class="rate">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
+                    <i class="fas fa-star" aria-hidden="false"></i>
                   </div>
 
                   <p class="review-text">
@@ -657,17 +678,18 @@
 
                   <div class="review-info">
                     <h3 class="review-name">Futuros clientes</h3>
-                    <h5 class="review-job">San Francisco</h5>
+                    <h4 class="review-job">San Francisco</h4>
                   </div>
                 </div>
               </div>
 
-              <div class="review-nav swiper-button-prev">
-                <i class="fas fa-long-arrow-alt-left"></i>
-              </div>
-              <div class="review-nav swiper-button-next">
-                <i class="fas fa-long-arrow-alt-right"></i>
-              </div>
+              <button class="review-nav swiper-button-prev" aria-label="Anterior testimonio">
+                <i class="fas fa-long-arrow-alt-left" aria-hidden="true"></i>
+              </button>
+              
+              <button class="review-nav swiper-button-next" aria-label="Proximo testimonio">
+                <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+              </button>
             </div>
           </div>
 
@@ -676,7 +698,7 @@
           </div>
         </div>
         <div class="up">
-          <a href="#top"> <i class="fa-solid fa-up-long"></i></a>
+          <a href="#top" aria-label="volver a la sección inicial" role="button"> <i class="fa-solid fa-up-long" aria-hidden="false"></i></a>
         </div>
       </div>
 
@@ -694,21 +716,21 @@
             <div class="information-wrap">
               <div class="information">
                 <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fas fa-map-marker-alt" aria-hidden="false"></i>
                 </div>
                 <p class="info-text">Gob. Cárcano N°789<br> Valle Hermooso.Córdoba.<br>Argentina</p>
               </div>
 
               <div class="information">
                 <div class="contact-icon">
-                  <i class="fas fa-paper-plane"></i>
+                  <i class="fas fa-paper-plane" aria-hidden="false"></i>
                 </div>
                 <p class="info-text">giselafux@gmail.com</p>
               </div>
 
               <div class="information">
                 <div class="contact-icon">
-                  <i class="fas fa-phone-alt"></i>
+                  <i class="fas fa-phone-alt" aria-hidden="false"></i>
                 </div>
                 <p class="info-text">+54 3548-605596</p>
               </div>
@@ -720,36 +742,41 @@
             <div class="container">
 
               <form target="_blank" action="https://formsubmit.co/7fec82009f3328e8485a0b87bbae30dd" method="POST">
-                <div class="form-group">
+                <fieldset> 
+                 <div class="form-group">
                   <div class="form-row">
                     <div class="col">
-                      <input type="text" name="name" class="contact-input" placeholder="Nombre Completo" required>
+                      <label for="name"id="completename">Nombre</label>
+                      <input type="text" name="name" id="name"class="contact-input" placeholder="Nombre Completo"aria-describedby="debes ingresar nombre y apellido.Es campo requerido" required />
                     </div>
                     <div class="col">
-                      <input type="email" name="email" class="contact-input" placeholder="Email" required>
+                      <label for="emailone"id="email">.</label> 
+                      <input type="email"id="emailone" name="email" class="contact-input" placeholder="Email" aria-describedby="debes ingresar el mail.Es requerido"required/>
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <textarea placeholder="Tu mensaje" class="contact-input textarea" name="message" rows="10"
+                  <label for="texttarea" id="mensaje">Mensaje</label>
+                  <textarea placeholder="Tu mensaje" id="texttarea"class="contact-input textarea" name="message" rows="10" aria-describedby="Puedes dejar tu mensaje.Es requerido"
                     required></textarea>
                 </div>
-                <button type="submit" class="btn">Enviar</button>
+                <button type="submit" class="btn" aria-label ="enviar correo electrónico">Enviar</button>
                 <!-- para que no aparezca la pag formSubmit de ellos(api externa) -->
                 <!--   <input type="hidden" name="_next" value="http://localhost:80/GiselaFux/thanks.html"> -->
                 <!-- <input type="hidden" name="_next" value="https://fuxgisela.onrender.com/thanks.html">  -->
                 <input type="hidden" name="_next" value="https://fuxgisela.onrender.com/thanks.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
-              </form>
-            </div>
+              </fieldset> 
+            </form>
+          </div>
 
-          </div>
-          <div class="up" id="for">
-            <a href="#top"> <i class="fa-solid fa-up-long"></i></a>
-          </div>
         </div>
-    </section>
+          <div class="up" id="for">
+            <a href="#top" aria-label="volver a la sección inicial" role="button"> <i class="fa-solid fa-up-long" aria-hidden="false"></i></a>
+          </div>
+       </div>
+      </section>
 
 
     </main>
@@ -807,11 +834,12 @@
           </div>
 
           <div class="grid-4-col footer-newstletter">
-            <img src="./img/shapes/img-diseñadora.jpg" alt="" id="">
+            <img src="./img/shapes/img-diseñadora.jpg" alt="diseñadora trabajando en una notebook feliz" id="">
             <div class="footer-input-wrap">
-              <input type="email" class="footer-input" placeholder="Email" />
-              <a href="https://www.gmail.com" class="input-arrow" target="_blank">
-                <i class="fas fa-angle-right"></i>
+              
+              <input type="email" id="emailtwo" class="footer-input" placeholder="Email" />
+              <a href="https://www.gmail.com" class="input-arrow" aria-label="gmail" target="_blank">
+                <i class="fas fa-angle-right" aria-hidden="false"></i>
               </a>
             </div>
           </div>
@@ -827,18 +855,18 @@
               <span class="footer-line"></span>
               <div class="social-media">
 
-                <a href="https://github.com/GiselaFux" target="_blank">
-                  <i class="fab fa-github"></i>
+                <a href="https://github.com/GiselaFux" aria-label="GitHub" target="_blank">
+                  <i class="fab fa-github" aria-hidden="false"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/giselafux" target="_blank">
-                  <i class="fab fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/giselafux"  role= "button" aria-label="LinkedIn" target="_blank">
+                  <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div class="up">
-          <a href="#top"> <i class="fa-solid fa-up-long"></i></a>
+          <a href="#top" aria-label="volver a la sección inicial"> <i class="fa-solid fa-up-long" id="arribaDistinto" aria-hidden="false"></i></a>
         </div>
       </div>
 

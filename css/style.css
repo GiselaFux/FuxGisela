@@ -2,7 +2,7 @@
 
 :root {
   --dark-one: #333;
-  --dark-two: #7a7a7a;
+  --dark-two: #373636;
   --main-color: #784cfb;
   --light-one: #fff;
   --light-two: #f9fafb;
@@ -531,7 +531,7 @@ header .circle {
 
 .portfolio .title,
 .portfolio .title:before {
-  color: var(--light-one);
+  color: white;
 }
 
 .portfolio .title:after {
@@ -642,7 +642,7 @@ header .circle {
   left: 0;
   z-index: 2;
   color: var(--light-one);
-  background-color: rgba(120, 76, 251, 0.55);
+  background-color: black ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -652,10 +652,10 @@ header .circle {
   transition: 0.5s;
 }
 
-.img-overlay .plus {
+ .img-overlay .plus {
   position: relative;
   margin: auto 0;
-}
+} 
 
 .plus:before,
 .plus:after {
@@ -677,7 +677,12 @@ header .circle {
 .img-description {
   width: 100%;
 }
-
+.img-description h5{
+  font-weight: 300;
+}
+.img-description a{
+  color:var(--light-one);
+}
 .img-overlay h3 {
   font-weight: 600;
   text-transform: uppercase;
@@ -686,11 +691,13 @@ header .circle {
 
 .img-overlay h5 {
   font-size: 1.15rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-.gallery-image:hover .img-overlay {
-  opacity: 1;
+ .gallery-image:hover  .img-overlay {
+   opacity: 1; 
+  
+  
 }
 
 .gallery-image:hover img {
@@ -730,7 +737,7 @@ header .circle {
 }
 
 .skill-title {
-  color: #555;
+  color: var(--main-color);
   font-weight: 600;
   margin-bottom: 0.3rem;
 }
@@ -763,7 +770,7 @@ header .circle {
   position: absolute;
   font-size: 8rem;
   font-weight: 800;
-  color: var(--main-color);
+  color: black;
   opacity: 0.04;
   top: 20px;
   left: 0;
@@ -843,13 +850,13 @@ header .circle {
 .review-name {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--dark-one);
+  color: black;
 }
 
 .review-job {
   font-size: 1.15rem;
   font-weight: 300;
-  color: #777;
+  color: black;
 }
 
 .review-nav {
@@ -862,11 +869,19 @@ header .circle {
 .swiper-button-next {
   right: 2rem;
   left: initial;
+  border-style: none;
+}
+.swiper-button-next:focus{
+  outline: #6b44e0 solid thick;
 }
 
 .swiper-button-prev {
   right: 4.5rem;
   left: initial;
+  border-style: none;
+}
+.swiper-button-prev:focus{
+  outline: #6b44e0 solid thick;
 }
 
 .swiper-button-prev:after,
@@ -877,9 +892,23 @@ header .circle {
 /* End Testimonials */
 
 /* Contact */
+#email{
+  color:white;
+}
+#completename{
+  color:white;
+}
+#mensaje{
+  color:white;
+}
+
+
+
+
+
+
 #cont {
   margin-left: 4rem;
-
 }
 
 .contact {
@@ -927,7 +956,7 @@ header .circle {
 
 .contact-form {
   padding-left: .2rem;
-}
+} 
 
 .contact-info .title:after {
   left: 0;
@@ -967,6 +996,9 @@ header .circle {
   font-size: 1.3rem;
   display: inline-block;
 }
+fieldset{
+ border-style: none;
+}
 
 .contact-form .title:after {
   display: none;
@@ -985,19 +1017,25 @@ header .circle {
 
 .contact-input {
   padding: 1.2rem 2.1rem;
-  margin: 0.6rem 0;
+  margin: .6rem 0;
   border: none;
   outline: none;
-  background: #f3f3f3;
+  background: #f5f4f4;
   border-radius: 4rem;
   font-weight: 600;
   font-size: 1.25rem;
   transition: 0.3s;
   width: 400px;
+  
 }
+
 
 .contact-input::placeholder {
   font-weight: 400;
+  color:black;
+}
+.contact-input:focus{
+  outline: #6b44e0 solid thick;
 }
 
 .contact-input.textarea {
@@ -1005,6 +1043,7 @@ header .circle {
   resize: none;
   min-height: 320px;
   border-radius: 2rem;
+  
 }
 
 .contact-input:hover {
@@ -1039,16 +1078,16 @@ header .circle {
 }
 
 .footer .title-sm {
-  color: #fafafa;
+  color: white;
   margin-bottom: 0.9rem;
 }
 
 .footer .text {
-  color: #aaa;
+  color: white;
 }
 
 .footer-links a {
-  color: #888;
+  color: whitesmoke;
   font-size: 1.25rem;
   display: inline-block;
   margin-bottom: 0.4rem;
@@ -1063,15 +1102,16 @@ header .circle {
   display: grid;
   grid-template-columns: auto 50px;
   width: 100%;
-  height: 50px;
+  height: 60px;
   border-radius: 30px;
   overflow: hidden;
   margin-top: 1.2rem;
 }
 
+
 .footer-input {
-  background: #373737;
-  color: #333;
+  background: whitesmoke;
+  color: white;
   outline: none;
   border: none;
   padding: 0 1.5rem;
@@ -1116,7 +1156,7 @@ header .circle {
 }
 
 .followme h3 {
-  color: #7b7b7b;
+  color: white;
   font-weight: 500;
   font-size: 1.3rem;
 }
@@ -1124,13 +1164,13 @@ header .circle {
 .followme .footer-line {
   width: 60px;
   height: 2px;
-  background-color: #7b7b7b;
+  background-color: whitesmoke;
   margin: 0 1.2rem;
   display: inline-block;
 }
 
 .social-media a {
-  color: #7b7b7b;
+  color: whitesmoke;
   font-size: 1.3rem;
   margin-right: 0.4rem;
   transition: 0.3s;
@@ -1184,23 +1224,30 @@ header .circle {
   animation: scale 1.2s ease-out infinite 1s;
 }
 
-.up {
+/* .up {
   width: 100px;
   height: 100px;
   transition: .2s;
   margin-top: 1.5rem;
-  background-color: var(--main-color);
+  background-color: rgb(246, 244, 244);
   padding: 30px 40px;
-}
+} */
 
 .up i {
-  font-size: 2.5rem;
+  font-size: 2.5rem; 
+  border:4px solid #683cec;
+  color:#5939b9
+}
+.up i:focus {
+  outline: black solid thick;
 
 }
-
-.up:hover {
-  border-radius: 50%;
+#arribaDistinto{
+  color:white;
+  border:4px solid #c3b6eb;
 }
+
+
 
 @keyframes scale {
   0% {
@@ -1538,6 +1585,7 @@ header .circle {
 
   .followme h3 {
     font-size: 1.05rem;
+    color:whitesmoke;
   }
 
   .followme .footer-line {
@@ -1844,23 +1892,21 @@ header .circle {
 }
 
 @media (max-width: 560px) {
-  .up {
-    width: 70px;
-    height: 70px;
-    transition: .2s;
-    background-color: var(--main-color);
-    padding: 22px 28px;
-  }
 
   .up i {
-    font-size: 1.5rem;
-
+    font-size: 1.5rem; 
+    border:4px solid #683cec;
+    color:#5939b9
   }
-
-  .up:hover {
-    border-radius: 50%;
+  .up i:focus {
+    outline: black solid thick;
+  
   }
-
+  #arribaDistinto{
+    color:white;
+    border:3px solid #c3b6eb;
+  }
+ 
   .container {
     padding: 0 2rem;
   }
