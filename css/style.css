@@ -1021,39 +1021,44 @@ fieldset{
   margin: .6rem 0;
   border: none;
   outline: none;
-  background: #f5f4f4;
+  background: var(--main-color)/* #f5f4f4 */;
   border-radius: 4rem;
   font-weight: 600;
   font-size: 1.25rem;
   transition: 0.3s;
   width: 400px;
-  
+  color:white
 }
 
 
 .contact-input::placeholder {
   font-weight: 400;
-  color:black;
+  color:white;
 }
-.contact-input:focus{
+/* .contact-input:focus {
   outline: #6b44e0 solid thick;
-}
+  color:black;
+} */
 
 .contact-input.textarea {
   width: 400px;
   resize: none;
   min-height: 320px;
   border-radius: 2rem;
-  
+  color:white;
 }
 
 .contact-input:hover {
-  background: #ececec;
+  background: /* #ececec */var(--main-color);
+  color:white;
+  outline: black solid thick;
 }
 
-.contact-input:focus {
-  background: #eaeaea;
-}
+ .contact-input:focus {
+  background: var(--main-color) ;
+  color:/* black */white;
+  outline: black solid thick;
+} 
 
 .contact-input .btn {
   margin-top: 0.6rem;
