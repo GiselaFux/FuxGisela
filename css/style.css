@@ -3,7 +3,8 @@
 :root {
   --dark-one: #333;
   --dark-two: #373636;
-  --main-color: #784cfb;
+  --main-color: /* #784cfb */#562dd2;
+  
   --light-one: #fff;
   --light-two: #f9fafb;
   --light-three: #f6f7fb;
@@ -526,7 +527,7 @@ header .circle {
   height: 520px;
   top: 0;
   left: 0;
-  background-color: var(--main-color);
+  background-color:  var(--main-color) ;
 }
 
 .portfolio .title,
@@ -552,7 +553,7 @@ header .circle {
   background-color: transparent;
   margin: 0.45rem 0.4rem;
   padding: 0.85rem 1.8rem;
-  color: var(--light-one);
+  color: white/* var(--light-one) */;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.1rem;

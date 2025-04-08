@@ -34,7 +34,7 @@
           </div>
 
           <div class="links">
-            <ul  role="menu" aria-labelledby="menuButton" >
+            <ul  role="menu" aria-label="menuButton" >
               <li role="menuitem">
                 <a href="#header">Home</a>
               </li>
@@ -150,7 +150,7 @@
         </div>
     </section>
 
-    <section class="portfolio section" id="portfolio" role="region" aria-labelledby="titulo-portfolio">
+    <section class="portfolio section" id="portfolio" role="region" aria-label="titulo-portfolio">
       <div class="background-bg">
         <div class="overlay overlay-sm">
           <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt="" role="presentation" />
@@ -459,7 +459,7 @@
         </div>
       </div>
     </section>
-    <section class="about section" id="about" role="region" aria-labelledby="titulo-about">
+    <section class="about section" id="about" role="region" aria-label="titulo-about">
       <div class="container">
         <div class="section-header">
           <h2 class="title" data-title="¿Quién soy yo?">Sobre mí</h2>
@@ -592,7 +592,7 @@
 
     </section>
 
-  <section class="testimonials section" id="testimonials" role="region" aria-labelledby="titulo-testimonios">
+  <section class="testimonials section" id="testimonials" role="region" aria-label="titulo-testimonios">
       <div class="container">
         <div class="section-header">
           <h3 class="title" data-title="Clientes opinan">Testimonios</h3>
@@ -716,48 +716,48 @@
             <div class="information-wrap">
               <div class="information">
                 <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt" aria-hidden="false"></i>
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                 </div>
-                <p class="info-text">Gob. Cárcano N°789<br> Valle Hermooso.Córdoba.<br>Argentina</p>
+                <p class="info-text" tabindex="0">Gob. Cárcano N°789<br> Valle Hermooso.Córdoba.<br>Argentina</p>
               </div>
 
               <div class="information">
                 <div class="contact-icon">
-                  <i class="fas fa-paper-plane" aria-hidden="false"></i>
+                  <i class="fas fa-paper-plane" aria-hidden="true"></i>
                 </div>
-                <p class="info-text">giselafux@gmail.com</p>
+                <p class="info-text"tabindex="0">giselafux@gmail.com</p>
               </div>
 
               <div class="information">
                 <div class="contact-icon">
-                  <i class="fas fa-phone-alt" aria-hidden="false"></i>
+                  <i class="fas fa-phone-alt" aria-hidden="true"></i>
                 </div>
-                <p class="info-text">+54 3548-605596</p>
+                <p class="info-text" tabindex="0">+54 3548-605596</p>
               </div>
             </div>
           </div>
 
-          <div class="contact-form">
+          <div class="contact-form" tabindex="0">
             <h3 class="title" id="cont">Contáctame</h3>
             <div class="container">
 
               <form target="_blank" action="https://formsubmit.co/7fec82009f3328e8485a0b87bbae30dd" method="POST">
-                <fieldset> 
+                <fieldset> <legend>Formulario de contacto</legend>
                  <div class="form-group">
                   <div class="form-row">
                     <div class="col">
                       <label for="name"id="completename">Nombre</label>
-                      <input type="text" name="name" id="name"class="contact-input" placeholder="Nombre Completo"aria-describedby="debes ingresar nombre y apellido.Es campo requerido" required />
+                      <input type="text" name="name" id="name"class="contact-input" placeholder="Nombre Completo"aria-label="debes ingresar nombre y apellido.Es campo requerido" required />
                     </div>
                     <div class="col">
                       <label for="emailone"id="email">.</label> 
-                      <input type="email"id="emailone" name="email" class="contact-input" placeholder="Email" aria-describedby="debes ingresar el mail.Es requerido"required/>
+                      <input type="email"id="emailone" name="email" class="contact-input" placeholder="Email" aria-label="debes ingresar el mail.Es requerido"required/>
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
                   <label for="texttarea" id="mensaje">Mensaje</label>
-                  <textarea placeholder="Tu mensaje" id="texttarea"class="contact-input textarea" name="message" rows="10" aria-describedby="Puedes dejar tu mensaje.Es requerido"
+                  <textarea placeholder="Tu mensaje" id="texttarea"class="contact-input textarea" name="message" rows="10" aria-label="Puedes dejar tu mensaje.Es requerido"
                     required></textarea>
                 </div>
                 <button type="submit" class="btn" aria-label ="enviar correo electrónico">Enviar</button>
