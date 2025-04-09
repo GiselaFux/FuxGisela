@@ -532,12 +532,17 @@ header .circle {
 
 .portfolio .title,
 .portfolio .title:before {
-  color: white;
+  color: var(--main-color);
 }
 
 .portfolio .title:after {
   background-color: var(--light-one);
 }
+#portfTitulo{
+  background-color: white;
+  color:var(--main-color);
+}
+
 
 .filter {
   width: 100%;
@@ -550,10 +555,10 @@ header .circle {
 .filter-btn {
   border: none;
   outline: none;
-  background-color: transparent;
+  background-color: /* transparent */white;
   margin: 0.45rem 0.4rem;
   padding: 0.85rem 1.8rem;
-  color: white/* var(--light-one) */;
+  color: var(--main-color) ;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.1rem;
@@ -903,11 +908,6 @@ header .circle {
   color:white;
 }
 
-
-
-
-
-
 #cont {
   margin-left: 4rem;
 }
@@ -942,7 +942,6 @@ header .circle {
 
 .contact-box {
   width: 100%;
-  /*  background-color: var(--light-one); */
   width: 100%;
   border-radius: 45px;
   padding: 5.5rem 4.5rem;
@@ -1035,10 +1034,7 @@ fieldset{
   font-weight: 400;
   color:white;
 }
-/* .contact-input:focus {
-  outline: #6b44e0 solid thick;
-  color:black;
-} */
+
 
 .contact-input.textarea {
   width: 400px;
@@ -1106,33 +1102,48 @@ fieldset{
 
 .footer-input-wrap {
   display: grid;
-  grid-template-columns: auto 50px;
+  grid-template-columns: 22% 53% 25%;
   width: 100%;
   height: 60px;
   border-radius: 30px;
   overflow: hidden;
   margin-top: 1.2rem;
+  background-color: white;
+  
 }
 
 
 .footer-input {
   background: whitesmoke;
-  color: white;
-  outline: none;
-  border: none;
   padding: 0 1.5rem;
   font-size: 1.1rem;
   transition: 0.3s;
+  height: 61px;
+  border-color: white;
+ color: black;
 }
 
 .input-arrow {
   color: #fff;
   background-color: var(--main-color);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.45rem;
+  align-items:center;
+  justify-content:center;
+  font-size: 1.05rem;
   transition: 0.3s;
+  height: 60px;
+}
+#ultimomail{
+  background: /* #222 */white;
+  color: black;
+  outline: none;
+  border-radius: 30px;
+  padding: .9rem 1rem;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  margin-top: 0px;
+ height:60px;
+ border:white;
 }
 
 .input-arrow:hover {
@@ -1230,14 +1241,6 @@ fieldset{
   animation: scale 1.2s ease-out infinite 1s;
 }
 
-/* .up {
-  width: 100px;
-  height: 100px;
-  transition: .2s;
-  margin-top: 1.5rem;
-  background-color: rgb(246, 244, 244);
-  padding: 30px 40px;
-} */
 
 .up i {
   font-size: 2.5rem; 
@@ -1252,7 +1255,7 @@ fieldset{
   color:white;
   border:4px solid #c3b6eb;
 }
-
+  
 
 
 @keyframes scale {
@@ -1571,18 +1574,51 @@ fieldset{
     margin-bottom: 0.5rem;
   }
 
+
   .footer-input-wrap {
-    height: 36px;
-    margin-top: 0.8rem;
+    display: grid;
+    grid-template-columns: 22% 53% 25%;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 1.2rem;
+    background-color: white;
+    
   }
-
+  
+  
   .footer-input {
-    font-size: 0.9rem;
-    padding: 0 1.2rem;
+    background: whitesmoke;
+    padding: 0 1.5rem;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    height: 61px;
+    border-color: white;
+   color: black;
   }
-
+  
   .input-arrow {
-    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--main-color);
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size: .8rem;
+    transition: 0.3s;
+    height: 60px;
+  }
+  #ultimomail{
+    background: /* #222 */white;
+    color: black;
+    outline: none;
+    border-radius: 30px;
+    padding: 1rem .4rem;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    margin-top: 0px;
+   height:60px;
+   border:white;
   }
 
   .copyright .text {
@@ -1619,7 +1655,8 @@ fieldset{
 
   #for {
     margin-left: -40px;
-  }
+  } 
+
 }
 
 @media (max-width: 850px) {
@@ -1855,10 +1892,51 @@ fieldset{
     padding: 0;
   }
 
+
   .footer-input-wrap {
-    max-width: 300px;
-    margin: 0.95rem auto 0 auto;
-    grid-template-columns: auto 45px;
+    display: grid;
+    grid-template-columns: 22% 53% 25%;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 1.2rem;
+    background-color: white;
+    
+  }
+  
+  
+  .footer-input {
+    background: whitesmoke;
+    padding: 0 1.5rem;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    height: 61px;
+    border-color: white;
+   color: black;
+  }
+  
+  .input-arrow {
+    color: #fff;
+    background-color: var(--main-color);
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 1.05rem;
+    transition: 0.3s;
+    height: 60px;
+  }
+  #ultimomail{
+    background: /* #222 */white;
+    color: black;
+    outline: none;
+    border-radius: 30px;
+    padding: .9rem 1rem;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    margin-top: 0px;
+   height:60px;
+   border:white;
   }
 
   .bottom-footer {
